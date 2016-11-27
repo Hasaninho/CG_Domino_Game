@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour {
 
     public GameObject ball;
+	//public string nextScene;
+    public GameObject door;
 
     private void OnTriggerEnter(Collider enteredObj)
     {
@@ -20,7 +22,9 @@ public class Win : MonoBehaviour {
     IEnumerator Delay()
     {
         yield return new WaitForSecondsRealtime(5);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+        door.SetActive(true);
+		//SceneManager.LoadScene(nextScene/*SceneManager.GetActiveScene().name*/, LoadSceneMode.Single);
+        
 
     }
 }

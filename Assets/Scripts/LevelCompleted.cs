@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LevelCompleted : MonoBehaviour {
-    string newSceneName;
+   string newSceneName;
 
     public void OnTriggerEnter(Collider Col)
     {
