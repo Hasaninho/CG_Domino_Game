@@ -5,6 +5,7 @@ public class tilt : MonoBehaviour {
 
     private Rigidbody rb;
     public int strength;
+    //public GameObject domino;
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
@@ -18,7 +19,7 @@ public class tilt : MonoBehaviour {
     {
         rb.AddForce(-transform.right * strength);
     }
-    
+
     //void FixedUpdate()
     //{
     //    if (Input.GetButtonDown("Fire1"))
@@ -27,9 +28,9 @@ public class tilt : MonoBehaviour {
     //    }
     //}
 
-    ////Update is called once per frame
+    //Update is called once per frame
     //void Update()
     //{
-
+        
     //}
 }
