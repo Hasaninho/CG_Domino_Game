@@ -18,9 +18,12 @@ public class cameraFollow : MonoBehaviour {
  
     void  OnMouseUp()
     {
-        followCamera.enabled = true;
-        mainCam.enabled = false;
-        followCamera.transform.position = new Vector3(transform.position.x + x, transform.position.y + y, transform.position.z + z);
+        if (this.name == "Start Domino")
+        {
+            followCamera.enabled = true;
+            mainCam.enabled = false;
+            followCamera.transform.position = new Vector3(transform.position.x + x, transform.position.y + y, transform.position.z + z);
+        }
     }
 
     void OnCollisionEnter(Collision col)
